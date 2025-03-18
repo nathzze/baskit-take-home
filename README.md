@@ -33,7 +33,7 @@ pip install -r requirements.txt
 2. Create a new project and enable **Google Sheets API** & **Google Drive API**.
 3. Generate a **Service Account JSON key**.
 4. Share your Google Sheet with the Service Account email.
-5. Save the JSON key as `credentials.json` in the project directory.
+5. Save the JSON key as `creds.json` in the project directory.
 
 ## 🚀 Usage
 ### 1️⃣ Run the ETL Pipeline
@@ -44,19 +44,19 @@ python etl.py
 ### 2️⃣ Verify Data in SQLite
 To open the database and run queries:
 ```bash
-sqlite3 my_database.db
+sqlite3 born_date_data.db
 ```
 Then run:
 ```sql
-SELECT * FROM users LIMIT 10;
+SELECT * FROM born_date_data LIMIT 10;
 ```
 
 ## 📂 Project Structure
 ```
-├── credentials.json   # Google API credentials (DO NOT COMMIT!)
+├── creds.json         # Google API credentials
 ├── etl.py             # Main ETL script
 ├── requirements.txt   # Required Python libraries
-├── my_database.db     # SQLite database (auto-created)
+├── born_date_data.db     # SQLite database (auto-created)
 ├── README.md          # Documentation
 ```
 ## 📧 Contact
