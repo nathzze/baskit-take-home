@@ -1,2 +1,67 @@
-# baskit-take-home
-This project implements an ETL (Extract, Transform, Load) pipeline that extracts data from a Google Sheet, transforms it, and loads it into an SQLite database. This project is created for application process as Data Engineer at Baskit 
+# SQLite ETL Pipeline
+
+## 🚀 Project Overview
+This project implements an **ETL (Extract, Transform, Load) pipeline** that extracts data from a **Google Sheet**, transforms it, and loads it into an **SQLite database**.
+
+## 📌 Features
+- **Extract** data directly from Google Sheets using `gspread`.
+- **Transform** data (standardize phone numbers, fix date formats, etc.).
+- **Load** data into an SQLite database.
+- **Verify** successful data loading with SQL queries.
+
+## 🛠 Installation
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/sqlite-etl-pipeline.git
+cd sqlite-etl-pipeline
+```
+
+### 2️⃣ Create a Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+source venv/bin/activate  # For macOS/Linux
+venv\Scripts\activate    # For Windows
+```
+
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Set Up Google Sheets API Credentials
+1. Go to [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project and enable **Google Sheets API** & **Google Drive API**.
+3. Generate a **Service Account JSON key**.
+4. Share your Google Sheet with the Service Account email.
+5. Save the JSON key as `credentials.json` in the project directory.
+
+## 🚀 Usage
+### 1️⃣ Run the ETL Pipeline
+```bash
+python etl.py
+```
+
+### 2️⃣ Verify Data in SQLite
+To open the database and run queries:
+```bash
+sqlite3 my_database.db
+```
+Then run:
+```sql
+SELECT * FROM users LIMIT 10;
+```
+
+## 📂 Project Structure
+```
+├── credentials.json   # Google API credentials (DO NOT COMMIT!)
+├── etl.py             # Main ETL script
+├── requirements.txt   # Required Python libraries
+├── my_database.db     # SQLite database (auto-created)
+├── README.md          # Documentation
+```
+## 📧 Contact
+For any questions, reach out to **your.email@example.com**
+
+---
+🚀 **Happy Coding!** 😊
+
