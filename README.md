@@ -13,7 +13,7 @@ This project implements an **ETL (Extract, Transform, Load) pipeline** that extr
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/yourusername/baskit-take-home.git
-cd sqlite-etl-pipeline
+cd baskit-take-home
 ```
 
 ### 2️⃣ Create a Virtual Environment (Optional but Recommended)
