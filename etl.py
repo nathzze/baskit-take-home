@@ -41,7 +41,7 @@ def standardize_date(date):
     try:
         return pd.to_datetime(date, errors='coerce').strftime('%Y-%m-%d')
     except:
-        return None  # Handle invalid dates gracefully
+        return None  # Handle invalid dates
     
 df["born_day"] = df["born_day"].apply(standardize_date)
 
