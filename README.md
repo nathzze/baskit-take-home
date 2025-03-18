@@ -60,7 +60,7 @@ SELECT * FROM users LIMIT 10;
 ├── README.md          # Documentation
 ```
 ## 📧 Contact
-For any questions, reach out to **your.email@example.com**
+For any questions, reach out to **nathzjoseph14@gmail.com**
 
 ---
 🚀 **Happy Coding!** 😊
