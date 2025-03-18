@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS born_date_data (
     id TEXT PRIMARY KEY,
     name TEXT,
     phone_number TEXT,
-    born_day TEXT
+    born_day DATE
 )
 """)
 
