@@ -56,7 +56,7 @@ SELECT * FROM born_date_data LIMIT 10;
 ├── creds.json         # Google API credentials
 ├── etl.py             # Main ETL script
 ├── requirements.txt   # Required Python libraries
-├── born_date_data.db     # SQLite database (auto-created)
+├── born_date_data.db  # SQLite database (auto-created)
 ├── README.md          # Documentation
 ```
 ## 📧 Contact
