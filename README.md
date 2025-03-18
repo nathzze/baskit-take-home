@@ -12,7 +12,7 @@ This project implements an **ETL (Extract, Transform, Load) pipeline** that extr
 ## 🛠 Installation
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/sqlite-etl-pipeline.git
+git clone https://github.com/yourusername/baskit-take-home.git
 cd sqlite-etl-pipeline
 ```
 
